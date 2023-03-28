@@ -3,6 +3,8 @@ import NavItem from './components/NavItem';
 import { TiThMenu, TiDelete } from "react-icons/ti";
 import { useState } from 'react';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import TabL from "./assets/Group12.png";
+
 
 
 
@@ -21,7 +23,7 @@ function Navbar() {
       <div className='flex justify-between h-[82px] text-[20px] items-center px-[10px] lg:px-10 2xl:px-20'>
 
         <div>
-          <img src={process.env.PUBLIC_URL + "/Group12.png"} alt="" />
+          <img src={TabL} alt="" />
         </div>
         <div className='items-center hidden xl:flex cursor-pointer'>
           <div className='text-primary font-bold'><NavItem title="Начало" /></div>

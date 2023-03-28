@@ -3,7 +3,7 @@ import NavItem from './components/NavItem';
 import { TiThMenu, TiDelete } from "react-icons/ti";
 import { useState } from 'react';
 import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-import logo from "./assets/Logo.png"
+import logo from "./assets/Group12.png";
 
 
 
@@ -24,7 +24,7 @@ function Navbar() {
         <div>
           <img src={logo} alt="" />
         </div>
-        <div className='items-center hidden xl:flex'>
+        <div className='items-center hidden xl:flex cursor-pointer'>
           <div className='text-primary font-bold'><NavItem title="Начало" /></div>
           <Link activeClass="active" to="digitalmenu" smooth={true} offset={-50} duration={600}><NavItem title="Услуги" /></Link>
           <Link activeClass="active" to="kakraboti" smooth={true} offset={0} duration={600}><NavItem title="Заведения" /></Link>
